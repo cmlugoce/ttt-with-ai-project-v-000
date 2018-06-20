@@ -6,7 +6,7 @@ class TicTacToe
 
   def call
     puts "Hi!!Welcome to Tic Tac Toe!"
-     puts "What kind of TicTacToe game would you want to play?"
+     puts "What kind of Tic Tac Toe game would you want to play?"
     puts " Enter 0 for a computer vs computer game"
     puts " Enter 1 for a human vs computer game"
     puts " Enter 2 for a human vs human game"
