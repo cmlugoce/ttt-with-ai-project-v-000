@@ -22,10 +22,12 @@ class TicTacToe
         Game.new(player_1 = Players::Human.new("X"), player_2 = Players::Computer.new("O")).play
         board = Board.new
         board.display
+        play
       else
         Game.new(player_1 = Players::Computer.new("X"), player_2 = Players::Human.new("O")).play
         board = Board.new
         board.display
+        play
       end
     end
   end
