@@ -20,6 +20,7 @@ class TicTacToe
       first_player = gets.chomp
       if first_player == "X" || first_player == "x"
         Game.new(player_1 = Players::Human.new("X"), player_2 = Players::Computer.new("O")).play
+        board = Board.new
       else
         Game.new(player_1 = Players::Computer.new("X"), player_2 = Players::Human.new("O")).play
       end
