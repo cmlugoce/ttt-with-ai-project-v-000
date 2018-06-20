@@ -18,6 +18,9 @@ class TicTacToe
       play 
     elsif input.to_i == 2
       Game.new.play
+      board = Board.new
+      board.display
+      play 
     else
       puts "Cool, which token do you want to be, X or O?"
       first_player = gets.chomp
