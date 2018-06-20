@@ -3,7 +3,7 @@ class TicTacToe
   end
 
   def call
-    puts "Welcome to Tic Tac Toe!"
+    puts "Hi!!Welcome to Tic Tac Toe!"
     puts "How many players today? (0-2)"
     input = gets.chomp
     if input.to_i == 0
