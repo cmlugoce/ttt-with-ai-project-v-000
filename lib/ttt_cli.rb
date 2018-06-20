@@ -1,4 +1,4 @@
-class TicTacToeCLI
+class TicTacToe
   def initialize
   end
 
