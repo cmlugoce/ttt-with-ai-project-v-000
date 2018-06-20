@@ -1,7 +1,7 @@
 class TicTacToe
-  attr_accessor :call
+  attr_accessor 
   def initialize
-    call
+  
   end
 
   def call
