@@ -21,8 +21,11 @@ class TicTacToe
       if first_player == "X" || first_player == "x"
         Game.new(player_1 = Players::Human.new("X"), player_2 = Players::Computer.new("O")).play
         board = Board.new
+        board.display
       else
         Game.new(player_1 = Players::Computer.new("X"), player_2 = Players::Human.new("O")).play
+        board = Board.new
+        board.display
       end
     end
   end
