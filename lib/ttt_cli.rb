@@ -13,6 +13,9 @@ class TicTacToe
     input = gets.chomp
     if input.to_i == 0
       Game.new(player_1 = Players::Computer.new("X"), player_2 = Players::Computer.new("O")).play
+      board = Board.new
+      board.display
+      play 
     elsif input.to_i == 2
       Game.new.play
     else
