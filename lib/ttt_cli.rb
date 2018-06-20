@@ -1,7 +1,7 @@
 class TicTacToe
   
   def initialize
-  
+  call
   end
 
   def call
