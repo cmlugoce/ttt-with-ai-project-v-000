@@ -5,14 +5,18 @@ class TicTacToe
 
   def call
     puts "Hi!!Welcome to Tic Tac Toe!"
-    puts "How many players today? (0-2)"
+     puts "What kind of TicTacToe game would you want to play?"
+    puts " Enter 0 for a computer vs computer game"
+    puts " Enter 1 for a human vs computer game"
+    puts " Enter 2 for a human vs human game"
+    puts " Type 'exit' to quit playing"
     input = gets.chomp
     if input.to_i == 0
       Game.new(player_1 = Players::Computer.new("X"), player_2 = Players::Computer.new("O")).play
     elsif input.to_i == 2
       Game.new.play
     else
-      puts "Okay, are you playing X or O?"
+      puts "Cool, which token do you want to be, X or O?"
       first_player = gets.chomp
       if first_player == "X" || first_player == "x"
         Game.new(player_1 = Players::Human.new("X"), player_2 = Players::Computer.new("O")).play
